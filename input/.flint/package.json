@@ -1,0 +1,15 @@
+{
+  "author": "",
+  "name": "flint-app-input",
+  "repository": "https://github.com/input",
+  "description": "",
+  "version": "1.0.0",
+  "main": "",
+  "scripts": {},
+  "dependencies": {
+    "codemirror": "^5.9.0",
+    "react": "^0.14.3",
+    "react-codemirror": "^0.2.1"
+  },
+  "installed": []
+}

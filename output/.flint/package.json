@@ -1,0 +1,14 @@
+{
+  "author": "",
+  "name": "flint-app-learn",
+  "repository": "https://github.com/learn",
+  "description": "",
+  "version": "1.0.0",
+  "main": "",
+  "scripts": {},
+  "dependencies": {
+    "flint-babel-core": "^5.8.54",
+    "flint-transform": "^1.3.128"
+  },
+  "installed": []
+}
