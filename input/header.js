@@ -1,58 +1,73 @@
-view Header {
-  let show = true
+import lessons from './lessons'
 
-  <Hover onChange={val => show = val}>
-    <bar>
-      <Logo />
-      <Links />
-      <ExampleLinks />
-    </bar>
-  </Hover>
+view Header {
+  let id
+  let lesson = null
+
+  on.props(() => {
+    id = view.props.id
+    lesson = lessons[id]
+  })
+
+  <Logo />
+  <Nav
+    prev={() => Flint.router.go('lesson/' + (id - 1))}
+    title={lesson.title}
+    next={() => Flint.router.go('lesson/' + (id + 1))}
+  />
 
   $ = {
-    position: 'fixed',
-    top: 0,
-    left: '10%',
-    right: '10%',
-    zIndex: 1000,
-  }
-
-  $bar = [{
-    flexGrow: 1,
-    flexFlow: 'row',
-    background: '#fff',
-    boxShadow: '0 1px 10px rgba(0,0,0,0.2)',
-    borderRadius: 3,
-    transition: 'all ease-in 200ms',
-    marginTop: 20,
     padding: 10,
-    height: 50,
-    alignItems: 'center',
-    opacity: 1,
-    transform: { y: 0 },
+    background: '#F7F7F7',
+    position: 'relative'
+  }
 
-  }, !show && {
-    opacity: 0,
-
-    transform: {
-      y: -100
-    }
-  }]
-}
-
-view Logo {
-  <img src="/flintlogo.png" />
-
-  $img = {
-    width: 'auto',
-    height: 30,
-    margin: [0, 20, 0, 0]
+  $Nav = {
+    position: 'absolute',
+    top: 5,
+    right: 5
   }
 }
 
-view Links {
-  <Link to="http://flintjs.com">Back to Flint.com</Link>
-}
+view Nav {
+  <arrow class="first piece" onClick={view.props.prev}>◀</arrow>
+  <title class="piece">{view.props.title}</title>
+  <arrow class="last piece" onClick={view.props.next}>▶</arrow>
 
-view ExampleLinks {
+  const radius = 5
+
+  $ = {
+    flexFlow: 'row',
+    color: '#c80032',
+    fontWeight: 600,
+    borderRadius: radius,
+    boxShadow: [0,0,0,0.1],
+    cursor: 'pointer'
+  }
+
+  $piece = {
+    padding: [5, 10],
+    background: [255,255,255,0.5],
+
+    hover: {
+      background: [255,255,255,1]
+    }
+  }
+
+  $last = {
+    borderTopRightRadius: radius,
+    borderBottomRightRadius: radius,
+  }
+
+  $first = {
+    borderTopLeftRadius: radius,
+    borderBottomLeftRadius: radius,
+  }
+
+  $title = {
+    border: [1, 'solid'],
+    borderColor: [0,0,0,0.1],
+    borderTop: 'none',
+    borderBottom: 'none'
+  }
 }

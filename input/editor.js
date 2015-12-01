@@ -16,6 +16,10 @@ import 'codemirror/addon/fold/foldcode'
 view Editor {
   let code = ''
 
+  on.props(() => {
+    code = view.props.example.code
+  })
+
   <ReactCodeMirror
     value={code}
     options={{
@@ -33,14 +37,14 @@ view Editor {
       javascriptHint: true
     }}
     onChange={val => {
-      console.log('changed', val)
       code = val
       view.props.onChange(val)
     }}
   />
 
   $ = {
-    flexGrow: 1
+    flexGrow: 1,
+    fontSize: 18
   }
 
   $CodeMirror = {

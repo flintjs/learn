@@ -1,8 +1,7 @@
-const example1 =`
-view Main {
+const example1 =
+`view Main {
   <h1>Hello World</h1>
-}
-`
+}`
 
 export default [
   {
