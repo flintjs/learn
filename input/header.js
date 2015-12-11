@@ -18,6 +18,7 @@ view Header {
 
   $ = {
     padding: 10,
+    flexShrink: 0,
     background: '#F7F7F7',
     position: 'relative'
   }

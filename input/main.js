@@ -33,35 +33,45 @@ view Body {
     if (frame) frame.contentWindow.postMessage(val, '*')
   }
 
-  <half class="in">
-    <Header id={id} />
-    <Editor example={example} onChange={passToFrame} />
-  </half>
-  <half>
-    <iframe
-      ref="frame"
-      height={1000}
-      seamless
-      onLoad={updateFrame}
-      src="http://localhost:4001?inlineStyles"
-    />
-  </half>
+  <wrap>
+    <half class="in">
+      <Header id={id} />
+      <Editor example={example} onChange={passToFrame} />
+    </half>
+    <half>
+      <iframe
+        ref="frame"
+        seamless
+        onLoad={updateFrame}
+        src="http://localhost:4001?inlineStyles"
+      />
+    </half>
+  </wrap>
 
-  $ = {
-    flexFlow: 'row',
-    flexGrow: 1
+  $wrap = {
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0
   }
 
   $half = {
-    flexGrow: 1,
-    width: '50%'
+    width: '50%',
+    position: 'absolute',
+    top: 0,
+    left: '50%',
+    bottom: 0
   }
 
   $in = {
-    borderRight: '1px solid #ddd'
+    borderRight: '1px solid #ddd',
+    left: 'auto'
   }
 
   $iframe = {
+    display: 'flex',
+    flexGrow: 1,
     border: 'none'
   }
 }

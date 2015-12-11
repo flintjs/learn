@@ -16,6 +16,7 @@ const opts = {
 
 const viewMatcher = /^view\s+([\.A-Za-z_0-9]*)\s*\{/
 function safeJSX(source) {
+  let inView = false
   let result = source
   .split("\n")
   .map((line, index) => {

@@ -20,6 +20,18 @@ view Editor {
     code = view.props.example.code
   })
 
+  on.render(sizeIt)
+  on.mount(sizeIt)
+  on.resize(window, sizeIt)
+
+  function sizeIt() {
+    let scroller = document.querySelector('.CodeMirror-scroll')
+
+    scroller.setAttribute('style', `
+      height: ${window.innerHeight}px;
+    `)
+  }
+
   <ReactCodeMirror
     value={code}
     options={{
@@ -45,10 +57,6 @@ view Editor {
   $ = {
     flexGrow: 1,
     fontSize: 18
-  }
-
-  $CodeMirror = {
-    border: [1, 'solid', '#ddd'],
   }
 }
 

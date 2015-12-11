@@ -159,6 +159,8 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {color: #f22;}
   padding-bottom: 30px;
   display: flex;
   flex-grow: 1;
+  overflow-y: hidden;
+  overflow-x: auto;
   outline: none; /* Prevent dragging from highlighting the element */
   position: relative;
 }
