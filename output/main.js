@@ -14,12 +14,39 @@ const opts = {
   ]
 }
 
-const flintTransform = src => transform(src, opts).code
+const viewMatcher = /^view\s+([\.A-Za-z_0-9]*)\s*\{/
+function safeJSX(source) {
+  let result = source
+  .split("\n")
+  .map((line, index) => {
+    let result = line
 
-eval(flintTransform(`view Main{
-  <h1>hello</h1>
-  ; <Child />
-}`))
+    let _view = result.match(viewMatcher)
+
+    if (_view && _view.length) {
+      inView = true
+    }
+
+    const JSXstart = inView && (
+      line.charAt(2) == '<' &&
+      line.charAt(3) != '/'
+    )
+
+    if (JSXstart)
+      result = ';' + result.substr(1)
+
+    if (inView && line.charAt(0) == '}')
+      inView = false
+
+    return result
+  })
+  .join("\n")
+
+  return result
+}
+
+
+const flintTransform = src => transform(safeJSX(src), opts).code
 
 window.addEventListener('message', e => {
   console.log('got', e.data, flintTransform(e.data))
