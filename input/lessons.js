@@ -9,8 +9,7 @@ export default [
   {
     title: "Second",
     code:
-`
-let randTo = x => Math.floor(Math.random() * x)
+`let randTo = x => Math.floor(Math.random() * x)
 
 view Main {
   let first, second, answer
@@ -33,14 +32,14 @@ view Main {
     next()
   }
 
-  <h3>Multiply!</h3>
-  <streak if={streak > 0}>
+`+`  <h3>Multiply!</h3>
+`+`  <streak if={streak > 0}>
     Streak: {streak}
   </streak>
-  <question>
+`+`  <question>
     {first} times {second} is:
   </question>
-  <input
+`+`  <input
     placeholder="Enter your answer"
     sync={guess}
     onEnter={check}
@@ -82,3 +81,17 @@ view Main {
 }`
   }
 ]
+
+
+
+// view Main {
+//   let data = null
+//
+//   async function load() {
+//     data = await fetch.json('http://api.are.na/v2/channels/barnrazer')
+//   }
+//
+//   load()
+//
+//   ;<h1>Hello {JSON.stringify(data)}</h1>
+// }

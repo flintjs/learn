@@ -1,5 +1,7 @@
 import lessons from './lessons'
 
+let production = window.location.hostname == 'flintjs.com'
+
 view Main {
   // <Next />
   <Body route="/lesson/:id" />
@@ -43,7 +45,7 @@ view Body {
         ref="frame"
         seamless
         onLoad={updateFrame}
-        src="http://localhost:4001?inlineStyles"
+        src={production ? 'http://learnout.flintjs.com' : 'http://localhost:4001?inlineStyles'}
       />
     </half>
   </wrap>

@@ -28,7 +28,7 @@ view Editor {
     let scroller = document.querySelector('.CodeMirror-scroll')
 
     scroller.setAttribute('style', `
-      height: ${window.innerHeight}px;
+      height: ${window.innerHeight - 60}px;
     `)
   }
 
@@ -56,7 +56,8 @@ view Editor {
 
   $ = {
     flexGrow: 1,
-    fontSize: 18
+    fontSize: 16,
+    lineHeight: '1.45rem'
   }
 }
 
