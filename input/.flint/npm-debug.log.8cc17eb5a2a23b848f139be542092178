@@ -1,0 +1,948 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'codemirror' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.1
+4 verbose install initial load of /Users/nw/company/learn/input/.flint/package.json
+5 warn package.json flint-app-input@1.0.0 No description
+6 warn package.json flint-app-input@1.0.0 No README data
+7 warn package.json flint-app-input@1.0.0 No license field.
+8 verbose installManyTop reading scoped package data from /Users/nw/company/learn/input/.flint/node_modules/codemirror/package.json
+9 verbose installManyTop reading scoped package data from /Users/nw/company/learn/input/.flint/node_modules/react/package.json
+10 verbose installManyTop reading scoped package data from /Users/nw/company/learn/input/.flint/node_modules/react-codemirror/package.json
+11 verbose readDependencies loading dependencies from /Users/nw/company/learn/input/.flint/package.json
+12 verbose install codemirror is installed as 5.9.0
+13 silly cache add args [ 'codemirror@^5.9.0', null ]
+14 verbose cache add spec codemirror@^5.9.0
+15 silly cache add parsed spec Result {
+15 silly cache add   raw: 'codemirror@^5.9.0',
+15 silly cache add   scope: null,
+15 silly cache add   name: 'codemirror',
+15 silly cache add   rawSpec: '^5.9.0',
+15 silly cache add   spec: '>=5.9.0 <6.0.0',
+15 silly cache add   type: 'range' }
+16 silly addNamed codemirror@>=5.9.0 <6.0.0
+17 verbose addNamed ">=5.9.0 <6.0.0" is a valid semver range for codemirror
+18 silly addNameRange { name: 'codemirror', range: '>=5.9.0 <6.0.0', hasData: false }
+19 silly mapToRegistry name codemirror
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/codemirror
+23 verbose addNameRange registry:https://registry.npmjs.org/codemirror not in flight; fetching
+24 verbose request uri https://registry.npmjs.org/codemirror
+25 verbose request no auth needed
+26 info attempt registry request try #1 at 5:36:41 PM
+27 verbose request using bearer token for auth
+28 verbose request id acddc1974d23d3d9
+29 verbose etag "838VJ185YSJWLCPW6QHH95YW6"
+30 http request GET https://registry.npmjs.org/codemirror
+31 http 304 https://registry.npmjs.org/codemirror
+32 verbose headers { 'cache-control': 'max-age=300',
+32 verbose headers   'accept-ranges': 'bytes',
+32 verbose headers   date: 'Mon, 14 Dec 2015 01:36:41 GMT',
+32 verbose headers   via: '1.1 varnish',
+32 verbose headers   connection: 'keep-alive',
+32 verbose headers   'x-served-by': 'cache-sjc3124-SJC',
+32 verbose headers   'x-cache': 'MISS',
+32 verbose headers   'x-cache-hits': '0',
+32 verbose headers   'x-timer': 'S1450057001.467802,VS0,VE83' }
+33 silly get cb [ 304,
+33 silly get   { 'cache-control': 'max-age=300',
+33 silly get     'accept-ranges': 'bytes',
+33 silly get     date: 'Mon, 14 Dec 2015 01:36:41 GMT',
+33 silly get     via: '1.1 varnish',
+33 silly get     connection: 'keep-alive',
+33 silly get     'x-served-by': 'cache-sjc3124-SJC',
+33 silly get     'x-cache': 'MISS',
+33 silly get     'x-cache-hits': '0',
+33 silly get     'x-timer': 'S1450057001.467802,VS0,VE83' } ]
+34 verbose etag https://registry.npmjs.org/codemirror from cache
+35 verbose get saving codemirror to /Users/nw/.npm/registry.npmjs.org/codemirror/.cache.json
+36 silly addNameRange number 2 { name: 'codemirror', range: '>=5.9.0 <6.0.0', hasData: true }
+37 silly addNameRange versions [ 'codemirror',
+37 silly addNameRange   [ '2.33.0',
+37 silly addNameRange     '3.14.1',
+37 silly addNameRange     '3.15.0',
+37 silly addNameRange     '3.16.0',
+37 silly addNameRange     '3.17.0',
+37 silly addNameRange     '3.18.0',
+37 silly addNameRange     '3.19.0',
+37 silly addNameRange     '3.20.0',
+37 silly addNameRange     '3.21.0',
+37 silly addNameRange     '3.22.0',
+37 silly addNameRange     '3.23.0',
+37 silly addNameRange     '4.0.3',
+37 silly addNameRange     '3.24.0',
+37 silly addNameRange     '4.1.0',
+37 silly addNameRange     '4.2.0',
+37 silly addNameRange     '4.3.0',
+37 silly addNameRange     '4.4.0',
+37 silly addNameRange     '4.5.0',
+37 silly addNameRange     '4.6.0',
+37 silly addNameRange     '4.7.0',
+37 silly addNameRange     '4.8.0',
+37 silly addNameRange     '4.9.0',
+37 silly addNameRange     '4.10.0',
+37 silly addNameRange     '4.11.0',
+37 silly addNameRange     '4.12.0',
+37 silly addNameRange     '4.13.0',
+37 silly addNameRange     '5.0.0',
+37 silly addNameRange     '5.1.0',
+37 silly addNameRange     '5.2.0',
+37 silly addNameRange     '5.3.0',
+37 silly addNameRange     '5.4.0',
+37 silly addNameRange     '5.5.0',
+37 silly addNameRange     '5.6.0',
+37 silly addNameRange     '5.7.0',
+37 silly addNameRange     '5.8.0',
+37 silly addNameRange     '5.9.0',
+37 silly addNameRange     '3.11.1',
+37 silly addNameRange     '3.12.0',
+37 silly addNameRange     '3.13.0' ] ]
+38 silly addNamed codemirror@5.9.0
+39 verbose addNamed "5.9.0" is a plain semver version for codemirror
+40 silly cache afterAdd codemirror@5.9.0
+41 verbose afterAdd /Users/nw/.npm/codemirror/5.9.0/package/package.json not in flight; writing
+42 verbose afterAdd /Users/nw/.npm/codemirror/5.9.0/package/package.json written
+43 silly install resolved [ { name: 'codemirror',
+43 silly install resolved     version: '5.9.0',
+43 silly install resolved     main: 'lib/codemirror.js',
+43 silly install resolved     description: 'In-browser code editing made bearable',
+43 silly install resolved     license: 'MIT',
+43 silly install resolved     directories: { lib: './lib' },
+43 silly install resolved     scripts: { test: 'node ./test/run.js' },
+43 silly install resolved     devDependencies:
+43 silly install resolved      { 'node-static': '0.6.0',
+43 silly install resolved        phantomjs: '1.9.2-5',
+43 silly install resolved        blint: '>=0.1.1' },
+43 silly install resolved     bugs: { url: 'http://github.com/codemirror/CodeMirror/issues' },
+43 silly install resolved     keywords: [ 'JavaScript', 'CodeMirror', 'Editor' ],
+43 silly install resolved     homepage: 'http://codemirror.net',
+43 silly install resolved     maintainers: [ [Object] ],
+43 silly install resolved     repository:
+43 silly install resolved      { type: 'git',
+43 silly install resolved        url: 'git+https://github.com/codemirror/CodeMirror.git' },
+43 silly install resolved     contributors:
+43 silly install resolved      [ [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object],
+43 silly install resolved        [Object] ],
+43 silly install resolved     gitHead: 'ec73f71ee6d04cc5c257f098bfcf693460be1866',
+43 silly install resolved     _id: 'codemirror@5.9.0',
+43 silly install resolved     _shasum: '4ad7bfc106837d3a974acedafeeec06c2829d757',
+43 silly install resolved     _from: 'codemirror@>=5.9.0 <6.0.0',
+43 silly install resolved     _npmVersion: '2.14.7',
+43 silly install resolved     _nodeVersion: '4.2.2',
+43 silly install resolved     _npmUser: { name: 'marijn', email: 'marijnh@gmail.com' },
+43 silly install resolved     dist:
+43 silly install resolved      { shasum: '4ad7bfc106837d3a974acedafeeec06c2829d757',
+43 silly install resolved        tarball: 'http://registry.npmjs.org/codemirror/-/codemirror-5.9.0.tgz' },
+43 silly install resolved     _resolved: 'https://registry.npmjs.org/codemirror/-/codemirror-5.9.0.tgz',
+43 silly install resolved     readme: 'ERROR: No README data found!' } ]
+44 info install codemirror@5.9.0 into /Users/nw/company/learn/input/.flint
+45 info installOne codemirror@5.9.0
+46 verbose installOne of codemirror to /Users/nw/company/learn/input/.flint not in flight; installing
+47 verbose lock using /Users/nw/.npm/_locks/codemirror-56407b393f197f02.lock for /Users/nw/company/learn/input/.flint/node_modules/codemirror
+48 silly install write writing codemirror 5.9.0 to /Users/nw/company/learn/input/.flint/node_modules/codemirror
+49 verbose unbuild node_modules/codemirror
+50 info preuninstall codemirror@5.9.0
+51 info uninstall codemirror@5.9.0
+52 verbose unbuild rmStuff codemirror@5.9.0 from /Users/nw/company/learn/input/.flint/node_modules
+53 info postuninstall codemirror@5.9.0
+54 silly gentlyRm /Users/nw/company/learn/input/.flint/node_modules/codemirror is being purged from base /Users/nw/company/learn/input/.flint
+55 verbose gentlyRm don't care about contents; nuking /Users/nw/company/learn/input/.flint/node_modules/codemirror
+56 silly vacuum-fs purging /Users/nw/company/learn/input/.flint/node_modules/codemirror
+57 silly vacuum-fs quitting because other entries in /Users/nw/company/learn/input/.flint/node_modules
+58 verbose tar unpack /Users/nw/.npm/codemirror/5.9.0/package.tgz
+59 verbose tar unpacking to /Users/nw/company/learn/input/.flint/node_modules/codemirror
+60 silly gentlyRm /Users/nw/company/learn/input/.flint/node_modules/codemirror is being purged
+61 verbose gentlyRm don't care about contents; nuking /Users/nw/company/learn/input/.flint/node_modules/codemirror
+62 silly gunzTarPerm modes [ '755', '644' ]
+63 silly gunzTarPerm extractEntry package.json
+64 silly gunzTarPerm extractEntry README.md
+65 silly gunzTarPerm extractEntry AUTHORS
+66 silly gunzTarPerm extractEntry CONTRIBUTING.md
+67 silly gunzTarPerm extractEntry addon/merge/merge.js
+68 silly gunzTarPerm extractEntry addon/merge/merge.css
+69 silly gunzTarPerm extractEntry addon/comment/comment.js
+70 silly gunzTarPerm extractEntry addon/comment/continuecomment.js
+71 silly gunzTarPerm extractEntry addon/display/autorefresh.js
+72 silly gunzTarPerm extractEntry addon/display/fullscreen.js
+73 silly gunzTarPerm extractEntry addon/display/panel.js
+74 silly gunzTarPerm extractEntry addon/display/placeholder.js
+75 silly gunzTarPerm extractEntry addon/display/rulers.js
+76 silly gunzTarPerm extractEntry addon/display/fullscreen.css
+77 silly gunzTarPerm extractEntry addon/edit/closebrackets.js
+78 silly gunzTarPerm extractEntry addon/edit/closetag.js
+79 silly gunzTarPerm extractEntry addon/edit/continuelist.js
+80 silly gunzTarPerm extractEntry addon/edit/matchbrackets.js
+81 silly gunzTarPerm extractEntry addon/edit/matchtags.js
+82 silly gunzTarPerm extractEntry addon/edit/trailingspace.js
+83 silly gunzTarPerm extractEntry addon/fold/brace-fold.js
+84 silly gunzTarPerm extractEntry addon/fold/comment-fold.js
+85 silly gunzTarPerm extractEntry addon/fold/foldcode.js
+86 silly gunzTarPerm extractEntry addon/fold/foldgutter.js
+87 silly gunzTarPerm extractEntry addon/fold/indent-fold.js
+88 silly gunzTarPerm extractEntry addon/fold/markdown-fold.js
+89 silly gunzTarPerm extractEntry addon/fold/xml-fold.js
+90 silly gunzTarPerm extractEntry addon/fold/foldgutter.css
+91 silly gunzTarPerm extractEntry addon/hint/anyword-hint.js
+92 silly gunzTarPerm extractEntry addon/hint/css-hint.js
+93 silly gunzTarPerm extractEntry addon/hint/html-hint.js
+94 silly gunzTarPerm extractEntry addon/hint/javascript-hint.js
+95 silly gunzTarPerm extractEntry addon/hint/show-hint.js
+96 silly gunzTarPerm extractEntry addon/hint/sql-hint.js
+97 silly gunzTarPerm extractEntry addon/hint/xml-hint.js
+98 silly gunzTarPerm extractEntry addon/hint/show-hint.css
+99 silly gunzTarPerm extractEntry addon/lint/coffeescript-lint.js
+100 silly gunzTarPerm extractEntry addon/lint/css-lint.js
+101 silly gunzTarPerm extractEntry addon/lint/html-lint.js
+102 silly gunzTarPerm extractEntry addon/lint/javascript-lint.js
+103 silly gunzTarPerm extractEntry addon/lint/json-lint.js
+104 silly gunzTarPerm extractEntry addon/lint/lint.js
+105 silly gunzTarPerm extractEntry addon/lint/yaml-lint.js
+106 silly gunzTarPerm extractEntry addon/lint/lint.css
+107 silly gunzTarPerm extractEntry addon/dialog/dialog.js
+108 silly gunzTarPerm extractEntry addon/dialog/dialog.css
+109 silly gunzTarPerm extractEntry addon/mode/loadmode.js
+110 silly gunzTarPerm extractEntry addon/mode/multiplex.js
+111 silly gunzTarPerm extractEntry addon/mode/multiplex_test.js
+112 silly gunzTarPerm extractEntry addon/mode/overlay.js
+113 silly gunzTarPerm extractEntry addon/mode/simple.js
+114 silly gunzTarPerm extractEntry addon/runmode/colorize.js
+115 silly gunzTarPerm extractEntry addon/runmode/runmode-standalone.js
+116 silly gunzTarPerm extractEntry addon/runmode/runmode.js
+117 silly gunzTarPerm extractEntry addon/runmode/runmode.node.js
+118 silly gunzTarPerm extractEntry addon/scroll/annotatescrollbar.js
+119 silly gunzTarPerm extractEntry addon/scroll/scrollpastend.js
+120 silly gunzTarPerm extractEntry addon/scroll/simplescrollbars.js
+121 silly gunzTarPerm extractEntry addon/scroll/simplescrollbars.css
+122 silly gunzTarPerm extractEntry addon/search/match-highlighter.js
+123 silly gunzTarPerm extractEntry addon/search/matchesonscrollbar.js
+124 silly gunzTarPerm extractEntry addon/search/search.js
+125 silly gunzTarPerm extractEntry addon/search/searchcursor.js
+126 silly gunzTarPerm extractEntry addon/search/matchesonscrollbar.css
+127 silly gunzTarPerm extractEntry addon/selection/active-line.js
+128 silly gunzTarPerm extractEntry addon/selection/mark-selection.js
+129 silly gunzTarPerm extractEntry addon/selection/selection-pointer.js
+130 silly gunzTarPerm extractEntry addon/tern/tern.js
+131 silly gunzTarPerm extractEntry addon/tern/worker.js
+132 silly gunzTarPerm extractEntry addon/tern/tern.css
+133 silly gunzTarPerm extractEntry addon/wrap/hardwrap.js
+134 silly gunzTarPerm extractEntry bin/authors.sh
+135 silly gunzTarPerm extractEntry bin/compress
+136 silly gunzTarPerm extractEntry bin/lint
+137 silly gunzTarPerm extractEntry bin/release
+138 silly gunzTarPerm extractEntry bin/source-highlight
+139 silly gunzTarPerm extractEntry bower.json
+140 silly gunzTarPerm extractEntry keymap/emacs.js
+141 silly gunzTarPerm extractEntry keymap/sublime.js
+142 silly gunzTarPerm extractEntry keymap/vim.js
+143 silly gunzTarPerm extractEntry lib/codemirror.js
+144 silly gunzTarPerm extractEntry lib/codemirror.css
+145 silly gunzTarPerm extractEntry mode/meta.js
+146 silly gunzTarPerm extractEntry mode/nginx/nginx.js
+147 silly gunzTarPerm extractEntry mode/asn.1/asn.1.js
+148 silly gunzTarPerm extractEntry mode/asterisk/asterisk.js
+149 silly gunzTarPerm extractEntry mode/brainfuck/brainfuck.js
+150 silly gunzTarPerm extractEntry mode/clike/clike.js
+151 silly gunzTarPerm extractEntry mode/clojure/clojure.js
+152 silly gunzTarPerm extractEntry mode/cmake/cmake.js
+153 silly gunzTarPerm extractEntry mode/cobol/cobol.js
+154 silly gunzTarPerm extractEntry mode/coffeescript/coffeescript.js
+155 silly gunzTarPerm extractEntry mode/commonlisp/commonlisp.js
+156 silly gunzTarPerm extractEntry mode/css/css.js
+157 silly gunzTarPerm extractEntry mode/cypher/cypher.js
+158 silly gunzTarPerm extractEntry mode/d/d.js
+159 silly gunzTarPerm extractEntry mode/dart/dart.js
+160 silly gunzTarPerm extractEntry mode/diff/diff.js
+161 silly gunzTarPerm extractEntry mode/django/django.js
+162 silly gunzTarPerm extractEntry mode/dockerfile/dockerfile.js
+163 silly gunzTarPerm extractEntry mode/dtd/dtd.js
+164 silly gunzTarPerm extractEntry mode/dylan/dylan.js
+165 silly gunzTarPerm extractEntry mode/ebnf/ebnf.js
+166 silly gunzTarPerm extractEntry mode/ecl/ecl.js
+167 silly gunzTarPerm extractEntry mode/eiffel/eiffel.js
+168 silly gunzTarPerm extractEntry mode/elm/elm.js
+169 silly gunzTarPerm extractEntry mode/erlang/erlang.js
+170 silly gunzTarPerm extractEntry mode/factor/factor.js
+171 silly gunzTarPerm extractEntry mode/forth/forth.js
+172 silly gunzTarPerm extractEntry mode/fortran/fortran.js
+173 silly gunzTarPerm extractEntry mode/gas/gas.js
+174 silly gunzTarPerm extractEntry mode/gfm/gfm.js
+175 silly gunzTarPerm extractEntry mode/gherkin/gherkin.js
+176 silly gunzTarPerm extractEntry mode/go/go.js
+177 silly gunzTarPerm extractEntry mode/groovy/groovy.js
+178 silly gunzTarPerm extractEntry mode/haml/haml.js
+179 silly gunzTarPerm extractEntry mode/handlebars/handlebars.js
+180 silly gunzTarPerm extractEntry mode/haskell/haskell.js
+181 silly gunzTarPerm extractEntry mode/haxe/haxe.js
+182 silly gunzTarPerm extractEntry mode/htmlembedded/htmlembedded.js
+183 silly gunzTarPerm extractEntry mode/htmlmixed/htmlmixed.js
+184 silly gunzTarPerm extractEntry mode/http/http.js
+185 silly gunzTarPerm extractEntry mode/idl/idl.js
+186 silly gunzTarPerm extractEntry mode/jade/jade.js
+187 silly gunzTarPerm extractEntry mode/javascript/javascript.js
+188 silly gunzTarPerm extractEntry mode/jinja2/jinja2.js
+189 silly gunzTarPerm extractEntry mode/julia/julia.js
+190 silly gunzTarPerm extractEntry mode/livescript/livescript.js
+191 silly gunzTarPerm extractEntry mode/lua/lua.js
+192 silly gunzTarPerm extractEntry mode/markdown/markdown.js
+193 silly gunzTarPerm extractEntry mode/mathematica/mathematica.js
+194 silly gunzTarPerm extractEntry mode/apl/apl.js
+195 silly gunzTarPerm extractEntry mode/mirc/mirc.js
+196 silly gunzTarPerm extractEntry mode/mllike/mllike.js
+197 silly gunzTarPerm extractEntry mode/modelica/modelica.js
+198 silly gunzTarPerm extractEntry mode/mscgen/mscgen.js
+199 silly gunzTarPerm extractEntry mode/mumps/mumps.js
+200 silly gunzTarPerm extractEntry mode/asciiarmor/asciiarmor.js
+201 silly gunzTarPerm extractEntry mode/nsis/nsis.js
+202 silly gunzTarPerm extractEntry mode/ntriples/ntriples.js
+203 silly gunzTarPerm extractEntry mode/octave/octave.js
+204 silly gunzTarPerm extractEntry mode/oz/oz.js
+205 silly gunzTarPerm extractEntry mode/pascal/pascal.js
+206 silly gunzTarPerm extractEntry mode/pegjs/pegjs.js
+207 silly gunzTarPerm extractEntry mode/perl/perl.js
+208 silly gunzTarPerm extractEntry mode/php/php.js
+209 silly gunzTarPerm extractEntry mode/pig/pig.js
+210 silly gunzTarPerm extractEntry mode/properties/properties.js
+211 silly gunzTarPerm extractEntry mode/puppet/puppet.js
+212 silly gunzTarPerm extractEntry mode/python/python.js
+213 silly gunzTarPerm extractEntry mode/q/q.js
+214 silly gunzTarPerm extractEntry mode/r/r.js
+215 silly gunzTarPerm extractEntry mode/rpm/rpm.js
+216 silly gunzTarPerm extractEntry mode/rpm/changes/index.html
+217 silly gunzTarPerm extractEntry mode/rst/rst.js
+218 silly gunzTarPerm extractEntry mode/ruby/ruby.js
+219 silly gunzTarPerm extractEntry mode/rust/rust.js
+220 silly gunzTarPerm extractEntry mode/sass/sass.js
+221 silly gunzTarPerm extractEntry mode/scheme/scheme.js
+222 silly gunzTarPerm extractEntry mode/shell/shell.js
+223 silly gunzTarPerm extractEntry mode/sieve/sieve.js
+224 silly gunzTarPerm extractEntry mode/slim/slim.js
+225 silly gunzTarPerm extractEntry mode/smalltalk/smalltalk.js
+226 silly gunzTarPerm extractEntry mode/smarty/smarty.js
+227 silly gunzTarPerm extractEntry mode/solr/solr.js
+228 silly gunzTarPerm extractEntry mode/soy/soy.js
+229 silly gunzTarPerm extractEntry mode/sparql/sparql.js
+230 silly gunzTarPerm extractEntry mode/spreadsheet/spreadsheet.js
+231 silly gunzTarPerm extractEntry mode/sql/sql.js
+232 silly gunzTarPerm extractEntry mode/stex/stex.js
+233 silly gunzTarPerm extractEntry mode/stylus/stylus.js
+234 silly gunzTarPerm extractEntry mode/swift/swift.js
+235 silly gunzTarPerm extractEntry mode/tcl/tcl.js
+236 silly gunzTarPerm extractEntry mode/textile/textile.js
+237 silly gunzTarPerm extractEntry mode/tiddlywiki/tiddlywiki.js
+238 silly gunzTarPerm extractEntry mode/tiddlywiki/tiddlywiki.css
+239 silly gunzTarPerm extractEntry mode/tiki/tiki.js
+240 silly gunzTarPerm extractEntry mode/tiki/tiki.css
+241 silly gunzTarPerm extractEntry mode/toml/toml.js
+242 silly gunzTarPerm extractEntry mode/tornado/tornado.js
+243 silly gunzTarPerm extractEntry mode/troff/troff.js
+244 silly gunzTarPerm extractEntry mode/ttcn/ttcn.js
+245 silly gunzTarPerm extractEntry mode/ttcn-cfg/ttcn-cfg.js
+246 silly gunzTarPerm extractEntry mode/turtle/turtle.js
+247 silly gunzTarPerm extractEntry mode/twig/twig.js
+248 silly gunzTarPerm extractEntry mode/vb/vb.js
+249 silly gunzTarPerm extractEntry mode/vbscript/vbscript.js
+250 silly gunzTarPerm extractEntry mode/velocity/velocity.js
+251 silly gunzTarPerm extractEntry mode/verilog/verilog.js
+252 silly gunzTarPerm extractEntry mode/vhdl/vhdl.js
+253 silly gunzTarPerm extractEntry mode/vue/vue.js
+254 silly gunzTarPerm extractEntry mode/xml/xml.js
+255 silly gunzTarPerm extractEntry mode/xquery/xquery.js
+256 silly gunzTarPerm extractEntry mode/yaml/yaml.js
+257 silly gunzTarPerm extractEntry mode/z80/z80.js
+258 silly gunzTarPerm extractEntry release.md
+259 silly gunzTarPerm extractEntry theme/mdn-like.css
+260 silly gunzTarPerm extractEntry theme/3024-day.css
+261 silly gunzTarPerm extractEntry theme/abcdef.css
+262 silly gunzTarPerm extractEntry theme/ambiance-mobile.css
+263 silly gunzTarPerm extractEntry theme/ambiance.css
+264 silly gunzTarPerm extractEntry theme/base16-dark.css
+265 silly gunzTarPerm extractEntry theme/base16-light.css
+266 silly gunzTarPerm extractEntry theme/bespin.css
+267 silly gunzTarPerm extractEntry theme/blackboard.css
+268 silly gunzTarPerm extractEntry theme/cobalt.css
+269 silly gunzTarPerm extractEntry theme/colorforth.css
+270 silly gunzTarPerm extractEntry theme/dracula.css
+271 silly gunzTarPerm extractEntry theme/eclipse.css
+272 silly gunzTarPerm extractEntry theme/elegant.css
+273 silly gunzTarPerm extractEntry theme/erlang-dark.css
+274 silly gunzTarPerm extractEntry theme/hopscotch.css
+275 silly gunzTarPerm extractEntry theme/icecoder.css
+276 silly gunzTarPerm extractEntry theme/isotope.css
+277 silly gunzTarPerm extractEntry theme/lesser-dark.css
+278 silly gunzTarPerm extractEntry theme/liquibyte.css
+279 silly gunzTarPerm extractEntry theme/material.css
+280 silly gunzTarPerm extractEntry theme/mbo.css
+281 silly gunzTarPerm extractEntry theme/3024-night.css
+282 silly gunzTarPerm extractEntry theme/midnight.css
+283 silly gunzTarPerm extractEntry theme/monokai.css
+284 silly gunzTarPerm extractEntry theme/neat.css
+285 silly gunzTarPerm extractEntry theme/neo.css
+286 silly gunzTarPerm extractEntry theme/night.css
+287 silly gunzTarPerm extractEntry theme/paraiso-dark.css
+288 silly gunzTarPerm extractEntry theme/paraiso-light.css
+289 silly gunzTarPerm extractEntry theme/pastel-on-dark.css
+290 silly gunzTarPerm extractEntry theme/railscasts.css
+291 silly gunzTarPerm extractEntry theme/rubyblue.css
+292 silly gunzTarPerm extractEntry theme/seti.css
+293 silly gunzTarPerm extractEntry theme/solarized.css
+294 silly gunzTarPerm extractEntry theme/the-matrix.css
+295 silly gunzTarPerm extractEntry theme/tomorrow-night-bright.css
+296 silly gunzTarPerm extractEntry theme/tomorrow-night-eighties.css
+297 silly gunzTarPerm extractEntry theme/ttcn.css
+298 silly gunzTarPerm extractEntry theme/twilight.css
+299 silly gunzTarPerm extractEntry theme/vibrant-ink.css
+300 silly gunzTarPerm extractEntry theme/xq-dark.css
+301 silly gunzTarPerm extractEntry theme/xq-light.css
+302 silly gunzTarPerm extractEntry theme/yeti.css
+303 silly gunzTarPerm extractEntry theme/zenburn.css
+304 verbose write writing to /Users/nw/company/learn/input/.flint/node_modules/codemirror/package.json
+305 info preinstall codemirror@5.9.0
+306 verbose readDependencies loading dependencies from /Users/nw/company/learn/input/.flint/node_modules/codemirror/package.json
+307 verbose readDependencies loading dependencies from /Users/nw/company/learn/input/.flint/node_modules/codemirror/package.json
+308 silly install resolved []
+309 verbose about to build /Users/nw/company/learn/input/.flint/node_modules/codemirror
+310 info build /Users/nw/company/learn/input/.flint/node_modules/codemirror
+311 info linkStuff codemirror@5.9.0
+312 silly linkStuff codemirror@5.9.0 has /Users/nw/company/learn/input/.flint/node_modules as its parent node_modules
+313 verbose linkBins codemirror@5.9.0
+314 verbose linkMans codemirror@5.9.0
+315 verbose rebuildBundles codemirror@5.9.0
+316 info install codemirror@5.9.0
+317 info postinstall codemirror@5.9.0
+318 verbose unlock done using /Users/nw/.npm/_locks/codemirror-56407b393f197f02.lock for /Users/nw/company/learn/input/.flint/node_modules/codemirror
+319 verbose validateInstall loading /Users/nw/company/learn/input/.flint/package.json for validation
+320 verbose stack Error: write EPIPE
+320 verbose stack     at Object.exports._errnoException (util.js:874:11)
+320 verbose stack     at exports._exceptionWithHostPort (util.js:897:20)
+320 verbose stack     at WriteWrap.afterWrite (net.js:763:14)
+321 verbose cwd /Users/nw/company/learn/input/.flint
+322 error Darwin 15.2.0
+323 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--save" "codemirror"
+324 error node v4.2.1
+325 error npm  v2.14.7
+326 error code EPIPE
+327 error errno EPIPE
+328 error syscall write
+329 error write EPIPE
+330 error If you need help, you may report this error at:
+330 error     <https://github.com/npm/npm/issues>
+331 verbose exit [ 1, true ]

@@ -34,31 +34,31 @@
 23 verbose addNameRange registry:https://registry.npmjs.org/codemirror not in flight; fetching
 24 verbose request uri https://registry.npmjs.org/codemirror
 25 verbose request no auth needed
-26 info attempt registry request try #1 at 8:33:11 PM
+26 info attempt registry request try #1 at 3:28:13 PM
 27 verbose request using bearer token for auth
-28 verbose request id 556d3d892a03c657
+28 verbose request id 3ed4585e548d685f
 29 verbose etag "838VJ185YSJWLCPW6QHH95YW6"
 30 http request GET https://registry.npmjs.org/codemirror
 31 http 304 https://registry.npmjs.org/codemirror
 32 verbose headers { 'cache-control': 'max-age=300',
 32 verbose headers   'accept-ranges': 'bytes',
-32 verbose headers   date: 'Fri, 11 Dec 2015 04:33:11 GMT',
+32 verbose headers   date: 'Sun, 13 Dec 2015 23:28:13 GMT',
 32 verbose headers   via: '1.1 varnish',
 32 verbose headers   connection: 'keep-alive',
-32 verbose headers   'x-served-by': 'cache-lax1426-LAX',
+32 verbose headers   'x-served-by': 'cache-lax1421-LAX',
 32 verbose headers   'x-cache': 'MISS',
 32 verbose headers   'x-cache-hits': '0',
-32 verbose headers   'x-timer': 'S1449808391.420616,VS0,VE46' }
+32 verbose headers   'x-timer': 'S1450049293.158054,VS0,VE187' }
 33 silly get cb [ 304,
 33 silly get   { 'cache-control': 'max-age=300',
 33 silly get     'accept-ranges': 'bytes',
-33 silly get     date: 'Fri, 11 Dec 2015 04:33:11 GMT',
+33 silly get     date: 'Sun, 13 Dec 2015 23:28:13 GMT',
 33 silly get     via: '1.1 varnish',
 33 silly get     connection: 'keep-alive',
-33 silly get     'x-served-by': 'cache-lax1426-LAX',
+33 silly get     'x-served-by': 'cache-lax1421-LAX',
 33 silly get     'x-cache': 'MISS',
 33 silly get     'x-cache-hits': '0',
-33 silly get     'x-timer': 'S1449808391.420616,VS0,VE46' } ]
+33 silly get     'x-timer': 'S1450049293.158054,VS0,VE187' } ]
 34 verbose etag https://registry.npmjs.org/codemirror from cache
 35 verbose get saving codemirror to /Users/nw/.npm/registry.npmjs.org/codemirror/.cache.json
 36 silly addNameRange number 2 { name: 'codemirror', range: '>=5.9.0 <6.0.0', hasData: true }
