@@ -9,6 +9,5 @@
   "dependencies": {
     "codemirror": "^5.9.0",
     "react-codemirror": "^0.2.2"
-  },
-  "installed": []
+  }
 }
