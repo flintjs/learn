@@ -7,7 +7,9 @@ let production = window.location.hostname == 'flintjs.com'
 function setGist() {
   state.gist = window.location.search.indexOf('?src=') > -1
   if (window.location.pathname == '/' && !state.gist) {
-    Flint.router.go('/lessons/0')
+    setTimeout(() => {
+      Flint.router.go('/lessons/0')
+    })
   }
 }
 

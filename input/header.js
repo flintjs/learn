@@ -59,7 +59,8 @@ view Nav {
     fontWeight: 600,
     borderRadius: radius,
     boxShadow: [0,0,0,0.1],
-    cursor: 'pointer'
+    cursor: 'pointer',
+    userSelect: 'none',
   }
 
   $gist = { marginRight: 20, }

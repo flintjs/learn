@@ -3,6 +3,7 @@ view Logo {
 
   $img = {
     width: 'auto',
+    cursor: 'pointer',
     maxWidth: 100,
     margin: [0, 20, 0, 0]
   }
