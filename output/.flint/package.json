@@ -6,9 +6,6 @@
   "version": "1.0.0",
   "main": "",
   "scripts": {},
-  "dependencies": {
-    "flint-babel-core": "^5.8.54",
-    "flint-transform": "^1.3.128"
-  },
+  "dependencies": {},
   "installed": []
 }

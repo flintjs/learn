@@ -12,7 +12,7 @@ view Header {
     lesson = lessons[id]
   })
 
-  <Logo />
+  <Logo onClick={() => Flint.router.go('/lessons/0')} />
   <Nav
     prev={() => Flint.router.go('lessons/' + (id - 1))}
     title={state.current.title}
@@ -59,8 +59,7 @@ view Nav {
     fontWeight: 600,
     borderRadius: radius,
     boxShadow: [0,0,0,0.1],
-    cursor: 'pointer',
-    userSelect: 'none',
+    cursor: 'pointer'
   }
 
   $gist = { marginRight: 20, }

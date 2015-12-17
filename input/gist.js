@@ -1,6 +1,8 @@
+import { production } from './state'
+
 let remote = 'http://gist.flintjs.com?source='
 let local = window.location.origin + '/'
-let prefix = (window.location.hostname == 'localhost' ? local : remote) + '?src='
+let prefix = (production ? local : remote) + '?src='
 
 export default {
   save(source) {

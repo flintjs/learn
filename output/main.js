@@ -1,6 +1,7 @@
-import { transform } from 'flint-babel-core/browser'
+import browser from 'flint-babel-core/browser'
 import flint from 'flint-transform'
 
+console.log('transform is', browser, 'flint is', flint)
 const opts = {
   jsxPragma: 'view.el',
   stage: 2,

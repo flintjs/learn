@@ -3,4 +3,5 @@ export default {
   source: ``,
   lessonID: 0,
   current: null,
+  production: window.location.hostname == 'localhost'
 }

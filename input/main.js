@@ -67,7 +67,7 @@ view Body {
         ref="frame"
         seamless
         onLoad={updateFrame}
-        src={production ? 'http://learnout.flintjs.com' : 'http://localhost:4001?inlineStyles'}
+        src={state.production ? 'http://learnout.flintjs.com' : 'http://localhost:4001?inlineStyles'}
       />
     </half>
   </wrap>
