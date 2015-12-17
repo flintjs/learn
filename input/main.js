@@ -1,10 +1,23 @@
 import lessons from './lessons'
+import { getSource } from './gist'
+import state from './state'
 
 let production = window.location.hostname == 'flintjs.com'
 
+function setGist() {
+  state.gist = window.location.search.indexOf('?src=') > -1
+  if (window.location.pathname == '/' && !state.gist) {
+    Flint.router.go('/lessons/0')
+  }
+}
+
 view Main {
+  setGist()
+  Flint.router.onChange(setGist)
+
   // <Next />
-  <Body route="/lesson/:id" />
+  <Body route="/lessons/:id" />
+  <Body gist route="/" />
   // <Sidebar />
 
   $ = {
@@ -19,7 +32,13 @@ view Body {
 
   on.props(() => {
     id = +view.props.params.id
-    example = lessons[id]
+    state.lessonID = id
+    if (view.props.gist) {
+      let source = window.location.href.split('?src=')[1]
+      state.current = { title: "Gist", code: decodeURI(source) }
+    } else {
+      state.current = lessons[id]
+    }
   })
 
   on.mount(() => {
@@ -28,17 +47,18 @@ view Body {
   })
 
   function updateFrame() {
-    passToFrame(example.code)
+    passToFrame(state.current.code)
   }
 
   function passToFrame(val) {
+    state.current.code = val
     if (frame) frame.contentWindow.postMessage(val, '*')
   }
 
   <wrap>
     <half class="in">
       <Header id={id} />
-      <Editor example={example} onChange={passToFrame} />
+      <Editor example={state.current} onChange={passToFrame} />
     </half>
     <half>
       <iframe

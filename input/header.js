@@ -1,4 +1,7 @@
 import lessons from './lessons'
+import { save, getSource } from './gist'
+
+import state, { gist } from './state'
 
 view Header {
   let id
@@ -11,9 +14,9 @@ view Header {
 
   <Logo />
   <Nav
-    prev={() => Flint.router.go('lesson/' + (id - 1))}
-    title={lesson.title}
-    next={() => Flint.router.go('lesson/' + (id + 1))}
+    prev={() => Flint.router.go('lessons/' + (id - 1))}
+    title={state.current.title}
+    next={() => Flint.router.go('lessons/' + (id + 1))}
   />
 
   $ = {
@@ -31,13 +34,26 @@ view Header {
 }
 
 view Nav {
-  <arrow class="first piece" onClick={view.props.prev}>◀</arrow>
-  <title class="piece">{view.props.title}</title>
-  <arrow class="last piece" onClick={view.props.next}>▶</arrow>
+  let getLink = () => {
+    let url = save(state.current.code)
+    window.location = url
+  }
+
+  <contain class="gist">
+    <title class="piece solo" onClick={getLink}>Share</title>
+  </contain>
+  <contain>
+    <arrow if={!gist && state.lessonID > 0} class="first piece" onClick={view.props.prev}>◀</arrow>
+    <title class={{solo:gist, piece:true}}
+           onClick={() => gist && Flint.router.go('/lessons/0') }
+    >{gist ? 'Examples' : view.props.title}</title>
+    <arrow if={!gist && state.lessonID < lessons.length - 1} class="last piece" onClick={view.props.next}>▶</arrow>
+  </contain>
 
   const radius = 5
 
-  $ = {
+  $ = { flexFlow: 'row', }
+  $contain = {
     flexFlow: 'row',
     color: '#c80032',
     fontWeight: 600,
@@ -45,6 +61,10 @@ view Nav {
     boxShadow: [0,0,0,0.1],
     cursor: 'pointer'
   }
+
+  $gist = { marginRight: 20, }
+
+  $lesson = { flexFlow: 'row' }
 
   $piece = {
     padding: [5, 10],
@@ -71,4 +91,6 @@ view Nav {
     borderTop: 'none',
     borderBottom: 'none'
   }
+
+  $solo = { border: [0, 'solid'] }
 }

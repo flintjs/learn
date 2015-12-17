@@ -8,8 +8,9 @@
   "scripts": {},
   "dependencies": {
     "codemirror": "^5.9.0",
+    "goo.gl": "^0.1.4",
     "react": "^0.14.3",
-    "react-codemirror": "^0.2.1"
+    "react-codemirror": "^0.2.2"
   },
   "installed": []
 }

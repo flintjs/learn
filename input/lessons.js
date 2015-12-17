@@ -3,11 +3,73 @@ export default [
     title: "Welcome",
     code:
 `view Main {
-  <h1>Hello World</h1>
+  <welcome>
+    <h1>Hello World</h1>
+    <h2>Welcome to Flint</h2>
+  </welcome>
 }`
   },
   {
-    title: "Second",
+    title: "Styles",
+    code:
+`view Main {
+  <welcome>
+    <h1>Hello World</h1>
+    <h2>Welcome to Flint</h2>
+  </welcome>
+
+  $welcome = {
+    padding: 20,
+  }
+
+  $h1 = {
+    fontSize: 60,
+    color: 'rgba(0,0,0,0.2)'
+  }
+
+  $h2 = { marginLeft: 60, }
+}`
+  },
+  {
+    title: "Basic State",
+    code:
+`view Main {
+  // try increasing clicks then changing this code
+  let clicks = 0
+
+  <welcome>
+    <h1>Clicked {clicks} times</h1>
+    <h2 if={clicks > 5}>You click a lot!</h2>
+    <button onClick={() => clicks++}>a little more</button>
+    <button onClick={() => clicks--}>a little less</button>
+  </welcome>
+
+  $h1 = { marginLeft: 85 }
+  $h2 = { marginLeft: 125 }
+
+  $button = {
+    marginLeft: 30,
+    fontSize: 30,
+  }
+}`
+  },
+  {
+    title: "Multiple Views",
+    code:
+`view Main {
+  <welcome>
+    <Greetings name="Nick" />
+    <Greetings name="Nate" />
+    <Greetings name="Everyone" />
+  </welcome>
+}
+
+view Greetings {
+  <h1>Hello {view.props.name}</h1>
+}`
+  },
+  {
+    title: "Multiplication",
     code:
 `let randTo = x => Math.floor(Math.random() * x)
 

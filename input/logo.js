@@ -1,5 +1,5 @@
 view Logo {
-  <img src="/flintlogo.png" />
+  <img onClick={() => Flint.router.go('/lessons/0')} src="/images/logo.png" />
 
   $img = {
     width: 'auto',
