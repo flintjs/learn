@@ -8,9 +8,14 @@
   "scripts": {},
   "dependencies": {
     "codemirror": "^5.9.0",
+<<<<<<< HEAD
     "goo.gl": "^0.1.4",
     "react": "^0.14.3",
     "react-codemirror": "^0.2.2"
   },
   "installed": []
+=======
+    "react-codemirror": "^0.2.2"
+  }
+>>>>>>> 08b247acfb7dbdbda6013ba2022032f9c009c976
 }
